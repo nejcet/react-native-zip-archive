@@ -122,6 +122,15 @@ refer to the [official guide](https://facebook.github.io/react-native/docs/linki
       }
   ```
 
+
+## Windows (WPF)
+
+Follow the instructions in the ['Linking Libraries'](https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrariesWindows.md) documentation on the react-native-windows GitHub repo. For the first step of adding the project to the Visual Studio solution file, the path to the project should be :
+
+ `../node_modules/react-native-zip-archive/wpf/RNZipArchive/RNZipArchive/RNZipArchive.csproj`
+
+
+
 ## Usage
 
 import it into your code
@@ -210,6 +219,8 @@ Your callback will be passed an object with the following fields:
 *Note: Remember to check the filename while processing progress, to be sure that the unzipped or zipped file is the right one, because the event is global.*
 
 *Note: Remember to unsubscribe! Run .remove() on the object returned by this method.*
+
+*Note: Android/iOS only.*
 
 ```js
 componentDidMount() {
